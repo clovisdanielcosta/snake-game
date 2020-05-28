@@ -1,5 +1,5 @@
 <h1 align="center">
-Snake Game | Jogo da Cobrinha com JavaScript
+:small_red_triangle_down: Snake Game | Jogo da Cobrinha com JavaScript
 <h3 align="center">
 Desafio prático do Bootcamp Global FullStack Developer da Digital Innovation One
 </h3>
@@ -10,9 +10,9 @@ O objetivo deste projeto é recriar o jogo da cobrinha com JavaScript. É um des
 </p>
 
 <p align="center">
-  <a href="#small_orange_diamond-deploy">Deploy</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#cloud-deploy">Deploy</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-instalando">Instalando</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#computer-instalando">Instalando</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#books-conhecimento">Conhecimentos adquiridos</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#small_orange_diamond-contribuindo">Contribuindo</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#small_orange_diamond-customizando">Customizando</a>
@@ -22,7 +22,7 @@ O objetivo deste projeto é recriar o jogo da cobrinha com JavaScript. É um des
   <img alt="BeTheHero" src="img/....gif" width="50%">
 </p>
 
-## :small_orange_diamond: Deploy
+## :cloud: Deploy
   
 Foi usado o servidor Heroku para o deploy da aplicação. Para testar a aplicação acesse:
 
@@ -34,12 +34,12 @@ Foi usado o servidor Heroku para o deploy da aplicação. Para testar a aplicaç
 
 Nesse projeto foram usadas as seguintes tecnologias:
 
-- [Html5](https://chocolatey.org/)
-- [Css3](https://nodejs.org/en/)
-- [JavaScript](https://expressjs.com/pt-br/)
-- [Canvas](https://insomnia.rest/)
+- [Html5](https://developer.mozilla.org/pt-BR/docs/Web/HTML/HTML5)
+- [Css3](http://www.linhadecodigo.com.br/artigo/3566/introducao-as-novidades-do-css3.aspx)
+- [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+- [Canvas](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Canvas)
 
-## :memo: Instalando
+## :computer: Instalando
 
 1. Faça o clone deste repositório numa pasta desejada.
 2. Execute o arquivo 'index.html' em um navegador.
@@ -51,9 +51,21 @@ Nesse projeto foram usadas as seguintes tecnologias:
 
 ## :small_orange_diamond: Contribuindo
 
-Se encontrar dificuldade para a instalação do NodeJS no Windows através do Chocolatey poderá acessar meu outro repositório sobre o assunto para obter ajuda:
+Também é possível adicionar imagens com Canvas como demonstrado abaixo:
 
-[Instalando o NodeJS no Windows](https://github.com/clovisdanielcosta/nodejs/)
+```javascript
+    let c = document.getElementById("idCanvas");
+    let ctx = c.getContext("2d");
+    let imagem = new Image();
+    imagem.onload = function(){
+    ctx.drawImage(imagem,0,0);
+    };
+    img.src = "img.png";
+```
+
+Para entender melhor o trecho acima poderá acessar o site da DevMedia listado abaixo:
+
+[DevMedia | HTML5 - A tag CANVAS](https://www.devmedia.com.br/html5-a-tag-canvas/25413)
 
 ## :small_orange_diamond: Customizando
 
