@@ -19,7 +19,7 @@ O objetivo deste projeto é recriar o jogo da cobrinha com JavaScript. É um des
 </p>
 
 <p align="center">
-  <img alt="BeTheHero" src="img/....gif" width="50%">
+  <img alt="SnakeGame" src="img/....gif" width="50%">
 </p>
 
 ## :cloud: Deploy
