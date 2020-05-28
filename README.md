@@ -1,7 +1,7 @@
 <h1 align="center">
 :small_red_triangle_down: Snake Game | Jogo da Cobrinha com JavaScript
 <h3 align="center">
-Desafio prático do Bootcamp Global FullStack Developer da Digital Innovation One
+Bootcamp Global FullStack Developer da Digital Innovation One
 </h3>
 </h1>
 
@@ -26,9 +26,7 @@ O objetivo deste projeto é recriar o jogo da cobrinha com JavaScript. É um des
   
 Foi usado o servidor Heroku para o deploy da aplicação. Para testar a aplicação acesse:
 
-1. Frontend, acesse: [https://bit.ly/cd_be-the-hero](https://bit.ly/cd_be-the-hero)
-
-2. Mobile, faça o download e instale no Android o arquivo <b>'bethehero_1_0.apk'</b>.
+[https://](https://)
 
 ## :rocket: Tecnologias
 
@@ -69,12 +67,6 @@ Para entender melhor o trecho acima poderá acessar o site da DevMedia listado a
 
 ## :small_orange_diamond: Customizando
 
-Fiz uma pequena customização na parte do Mobile do projeto porque, durante a semana, a parte de descrição dos casos acabou não sendo implementada antes da geração do apk. Abaixo as linhas que foram adicionadas nos arquivos 'index.js' nas pastas de 'Incidents' e 'Detail':
-
-```javascript
-        <Text style={styles.incidentProperty}>DESCRIÇÃO:</Text>
-        <Text style={styles.incidentValue}>{incident.description}</Text>                       
-```                        
 
 ## :small_orange_diamond: Agradecimentos
 
