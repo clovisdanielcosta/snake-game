@@ -70,7 +70,10 @@ Para entender melhor o trecho acima poderá acessar o site da DevMedia listado a
 
 ## :small_orange_diamond: Customizando
 
-1. Alteração da função update para impedir o uso das teclas fora do gramado.
+1. Adição de comentários no código.
+2. Alteração da função update para impedir o uso das teclas fora do gramado.
+3. Alteração das cores do jogo.
+4. Padronização do nome das funções para português.
 
 
 ## :small_orange_diamond: Agradecimentos
