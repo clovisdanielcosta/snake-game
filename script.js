@@ -13,18 +13,23 @@ let food = {
 
 }
 function criarBG(){
-    context.fillStyle = "lightgreen";
+    context.fillStyle = "black";
     context.fillRect(0, 0, 16 * box, 16 * box);
 }
 
 function criarCobrinha(){
     for (i = 0; i < snake.length; i++) {
-        context.fillStyle = "green";
+        // Cor dos gomos ímpares da cobrinha
+        context.fillStyle = "green"; 
+        // Cor dos gomos pares da cobrinha
+        if (i % 2 == 0) context.fillStyle = "lightgreen"; 	
+        // Cor da cabeça da cobrinha
+        if (i == 0) context.fillStyle = "lime";
         context.fillRect(snake[i].x, snake[i].y, box, box);
     }
 }
 
-function drawFood() {
+function criarComidinha() {
     context.fillStyle = "red";
     context.fillRect(food.x, food.y, box, box);
 }
@@ -42,7 +47,7 @@ function update(event) {
         // Ignora ações das teclas até voltar para o contexto
     }
     else {
-        // Altera a direção para não deixar sumir a cobrinha
+        // Altera a direção pelas teclas
         if (event.keyCode == 37 && direction != "right") direction = "left";
         if (event.keyCode == 38 && direction != "down") direction = "up";
         if (event.keyCode == 39 && direction != "left") direction = "right";
@@ -51,12 +56,13 @@ function update(event) {
 }
 
 function iniciarJogo() {
-
+    // Altera a direção para não deixar sumir a cobrinha
     if (snake[0].x > 15 * box && direction == "right") snake[0].x = 0; 
     if (snake[0].x < 0  && direction == "left") snake[0].x = 16 * box; 
     if (snake[0].y > 15 * box && direction == "down") snake[0].y = 0; 
     if (snake[0].y < 0 && direction == "up") snake[0].y = 16 * box; 
 
+    // Fim do Jogo
     for (i = 1; i < snake.length; i++) {
         if (snake[0].x == snake[i].x && snake[0].y == snake[i].y) {
             clearInterval(jogo);
@@ -66,11 +72,13 @@ function iniciarJogo() {
 
     criarBG();
     criarCobrinha();
-    drawFood();
+    criarComidinha();
 
+    // Pegando a posição da cabeça da cobrinha
     let snakeX = snake[0].x;
     let snakeY = snake[0].y;
 
+    // Fazendo a cobrinha andar colorindo a frente e apagando atrás
     if (direction == "right") snakeX += box;
     if (direction == "left") snakeX -= box;
     if (direction == "up") snakeY -= box;

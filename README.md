@@ -70,6 +70,8 @@ Para entender melhor o trecho acima poderá acessar o site da DevMedia listado a
 
 ## :small_orange_diamond: Customizando
 
+1. Alteração da função update para impedir o uso das teclas fora do gramado.
+
 
 ## :small_orange_diamond: Agradecimentos
 
