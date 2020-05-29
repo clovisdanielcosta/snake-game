@@ -72,8 +72,8 @@ Para entender melhor o trecho acima poderá acessar o site da DevMedia listado a
 
 1. Adição de comentários no código.
 2. Alteração da função update para impedir o uso das teclas fora do gramado.
-3. Alteração das cores do jogo.
-4. Padronização do nome das funções para português.
+3. Alteração das cores do jogo com efeito degradê no corpo da cobrinha.
+4. Padronização do nome das funções para inglês.
 
 
 ## :small_orange_diamond: Agradecimentos

@@ -9,7 +9,18 @@
     <title>Snake Game - Jogo da Cobrinha</title>
 </head>
 <body>
-    <h1>SNAKE GAME</h1>
+    
+    <div id="game-name" class="container">
+        <p >SNAKE GAME</p>
+    </div>
+    <div id="button-score" class="container">
+        <button onclick="start()">Novo Jogo</button>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <p id="score">Pontos: 0</p>
+    </div>
+    <div id="split"> 
+        <p></p>  
+    </div>   
     <canvas id="snake" width="512" height="512"></canvas>
 </body>
 </html>
