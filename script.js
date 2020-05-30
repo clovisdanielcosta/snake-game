@@ -56,9 +56,20 @@ function update(event) {
         if (event.keyCode == 40 && direction != "up") direction = "down";
     }
 }
+// Definindo estado inicial do jogo
+var gameState = "off";
 
+// Função do botão Novo Jogo
 function newGame() {
-    let game = setInterval(startGame, 100);
+
+    if (gameState === "off") {
+        clearInterval(game)
+        var game = setInterval(startGame, 100);
+        gameState = "on";
+    } else {
+        clearInterval(game);
+        gameState = "off";
+    }
 }
 
 function startGame() {
@@ -105,12 +116,12 @@ function startGame() {
     snake.unshift(newHead);
 
 }
-
+    // Carrega o contexto e os atores no evento onload do body
     function init() {
         
         createBG();
         createSnake();
         createFood();
-        
+
     }
 
