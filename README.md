@@ -111,4 +111,3 @@ A(s) imagem(s) usadas neste projeto são originais do autor ou foram obtidas do 
 Quero agradecer a <b>Digital Innovation One</b> pelas contribuições para o meu aprendizado neste projeto. Parabéns pelo trabalho de vocês. 
 
 Muito obrigado!:clap::clap:
-
