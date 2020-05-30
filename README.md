@@ -34,7 +34,7 @@ O objetivo deste projeto é recriar o jogo da cobrinha com JavaScript. É um des
   
 Foi usado o servidor Heroku para o deploy da aplicação. Para testar a aplicação acesse:
 
-[https://](https://)
+  [https://](https://)
 
 ## :rocket: Tecnologias
 
@@ -82,7 +82,7 @@ Nesse projeto foram usadas as seguintes tecnologias:
 
 2. Para aprender a usar imagens no canvas poderá acessar o site da DevMedia listado abaixo:
 
-[DevMedia | HTML5 - A tag CANVAS](https://www.devmedia.com.br/html5-a-tag-canvas/25413)
+  [DevMedia | HTML5 - A tag CANVAS](https://www.devmedia.com.br/html5-a-tag-canvas/25413)
 
 ## :small_orange_diamond: Customizando
 
