@@ -102,7 +102,9 @@ A(s) imagem(s) usadas neste projeto são originais do autor ou foram obtidas do 
 
 ## :small_orange_diamond: Trello
 
-
+<p align="center">
+  <img alt="Trello" src="img/trello-snake-game.gif" width="50%">
+</p>
 
 ## :small_orange_diamond: Agradecimentos
 
