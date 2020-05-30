@@ -1,6 +1,7 @@
 let canvas = document.getElementById("snake");
 let context = canvas.getContext("2d");
 let box = 32;
+let score = 0;
 let snake = [];
 snake[0] = {
     x: 8 * box,
@@ -106,6 +107,8 @@ function startGame() {
     } else {
         food.x = Math.floor(Math.random() * 15 + 1) * box;
         food.y = Math.floor(Math.random() * 15 + 1) * box;
+        // Pontuando quando come a comidinha.
+        score = document.getElementById("score").innerHTML = ("Pts: &nbsp;&nbsp;" + snake.length * 10);
     }
 
     let newHead = {
@@ -113,7 +116,9 @@ function startGame() {
         y: snakeY
     }
 
+    // Aumentando a cobrinha quando come a comidinha. Adicionada um gomo no início.
     snake.unshift(newHead);
+
 
 }
     // Carrega o contexto e os atores no evento onload do body

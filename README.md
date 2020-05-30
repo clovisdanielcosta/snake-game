@@ -59,10 +59,10 @@ Nesse projeto foram usadas as seguintes tecnologias:
 
 ## :small_orange_diamond: Contribuindo
 
-Para impedir que as teclas sejam acionadas fora do gramado altere a função <b>'update()'</b>:
+1. Para impedir que as teclas sejam acionadas fora do gramado altere a função <b>'update()'</b>:
 
 ```javascript
-    unction update(event) {
+    function update(event) {
 
     // Cobrinha fora do contexto
     if (snake[0].x > 15 * box && direction == "right" 
@@ -82,7 +82,7 @@ Para impedir que as teclas sejam acionadas fora do gramado altere a função <b>
 }
 ```
 
-Para entender melhor o trecho acima poderá acessar o site da DevMedia listado abaixo:
+2. Para aprender a usar imagens no canvas poderá acessar o site da DevMedia listado abaixo:
 
 [DevMedia | HTML5 - A tag CANVAS](https://www.devmedia.com.br/html5-a-tag-canvas/25413)
 
