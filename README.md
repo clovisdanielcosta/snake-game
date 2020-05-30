@@ -34,7 +34,7 @@ O objetivo deste projeto é recriar o jogo da cobrinha com JavaScript. É um des
   
 Foi usado o servidor Heroku para o deploy da aplicação. Para testar a aplicação acesse:
 
-- [https://](https://)
+- [https://cd-snake-game.herokuapp.com/](https://cd-snake-game.herokuapp.com/)
 
 ## :rocket: Tecnologias
 
