@@ -91,6 +91,7 @@ Nesse projeto foram usadas as seguintes tecnologias:
 3. Alteração das cores do jogo com efeito degradê no corpo da cobrinha.
 4. Padronização do nome das funções para inglês.
 5. Criação da logo.
+6. Criação do Score de pontuação.
 
 ## :small_orange_diamond: Licença
 
