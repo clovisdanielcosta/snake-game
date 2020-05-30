@@ -57,7 +57,11 @@ function update(event) {
     }
 }
 
-function startPlay() {
+function newGame() {
+    let game = setInterval(startGame, 100);
+}
+
+function startGame() {
     // Altera a direção para não deixar sumir a cobrinha
     if (snake[0].x > 15 * box && direction == "right") snake[0].x = 0; 
     if (snake[0].x < 0  && direction == "left") snake[0].x = 16 * box; 
@@ -102,4 +106,11 @@ function startPlay() {
 
 }
 
-let game = setInterval(startPlay, 150);
+    function init() {
+        
+        createBG();
+        createSnake();
+        createFood();
+        
+    }
+

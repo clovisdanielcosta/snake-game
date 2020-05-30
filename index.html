@@ -8,13 +8,14 @@
     <script defer src="script.js"></script>
     <title>Snake Game - Jogo da Cobrinha</title>
 </head>
-<body>
+<body onload="init()">
     
     <div id="game-name" class="container">
-        <p >SNAKE GAME</p>
+        <img src="./img/rugk-avatar.png" height="75%">
+        <p>SNAKE GAME</p>
     </div>
     <div id="button-score" class="container">
-        <button onclick="start()">Novo Jogo</button>
+        <button onclick="newGame()">Novo Jogo</button>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
         <p id="score">Pontos: 0</p>
     </div>
