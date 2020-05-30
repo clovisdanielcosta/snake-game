@@ -25,7 +25,8 @@ O objetivo deste projeto é recriar o jogo da cobrinha com JavaScript. É um des
   <a href="#books-conhecimento">Conhecimentos adquiridos</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#small_orange_diamond-contribuindo">Contribuindo</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#small_orange_diamond-customizando">Customizando</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#small_orange_diamond-licença">Licença</a>
+  <a href="#small_orange_diamond-licença">Licença</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#small_orange_diamond-trello">Trello</a>
 </p>
 
 <p align="center">
@@ -98,6 +99,10 @@ Nesse projeto foram usadas as seguintes tecnologias:
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
 A(s) imagem(s) usadas neste projeto são originais do autor ou foram obtidas do Google Imagens com a devida autorização para uso gratuito com modificação.
+
+## :small_orange_diamond: Trello
+
+
 
 ## :small_orange_diamond: Agradecimentos
 
