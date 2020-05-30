@@ -56,19 +56,16 @@ function update(event) {
         if (event.keyCode == 40 && direction != "up") direction = "down";
     }
 }
-// Definindo estado inicial do jogo
-var gameState = "off";
 
 // Função do botão Novo Jogo
 function newGame() {
-
-    if (gameState === "off") {
-        clearInterval(game)
-        var game = setInterval(startGame, 100);
+    if (gameState == "off") {
+        game = setInterval(startGame, 100);
         gameState = "on";
     } else {
         clearInterval(game);
         gameState = "off";
+        document.location.reload(true);
     }
 }
 
@@ -78,12 +75,15 @@ function startGame() {
     if (snake[0].x < 0  && direction == "left") snake[0].x = 16 * box; 
     if (snake[0].y > 15 * box && direction == "down") snake[0].y = 0; 
     if (snake[0].y < 0 && direction == "up") snake[0].y = 16 * box; 
-
-    // Fim do game
+    
+    // Verifica se fim do jogo
     for (i = 1; i < snake.length; i++) {
+
         if (snake[0].x == snake[i].x && snake[0].y == snake[i].y) {
+           // setInterval(startGame, 3000);
             clearInterval(game);
-            alert('Game Over! :(')
+            alert("Game Over!");
+
         }
     }
 
@@ -123,5 +123,9 @@ function startGame() {
         createSnake();
         createFood();
 
+        gameState = "off";
+        
     }
 
+    let game;
+    let gameState;

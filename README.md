@@ -8,6 +8,12 @@ Bootcamp Global FullStack Developer da Digital Innovation One
 </h3>
 </h1>
 
+<p align="center">
+  <img src="https://img.shields.io/static/v1?label=PRs&message=welcome&color=7159c1&labelColor=000000" alt="PRs welcome!" />
+
+  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=7159c1&labelColor=000000">
+</p>
+
 <p>
 O objetivo deste projeto é recriar o jogo da cobrinha com JavaScript. É um desafio prático do Bootcamp Global FullStack Developer disponibilizado pela <b>Digital Innovation One</b> cujo objetivo é formar desenvolvedores para estarem para atuar nas 10 nações que falam a língua portuguesa.
 </p>
@@ -18,7 +24,8 @@ O objetivo deste projeto é recriar o jogo da cobrinha com JavaScript. É um des
   <a href="#computer-instalando">Instalando</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#books-conhecimento">Conhecimentos adquiridos</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#small_orange_diamond-contribuindo">Contribuindo</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#small_orange_diamond-customizando">Customizando</a>
+  <a href="#small_orange_diamond-customizando">Customizando</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#small_orange_diamond-licença">Licença</a>
 </p>
 
 <p align="center">
@@ -52,16 +59,27 @@ Nesse projeto foram usadas as seguintes tecnologias:
 
 ## :small_orange_diamond: Contribuindo
 
-Também é possível adicionar imagens com Canvas como demonstrado abaixo:
+Para impedir que as teclas sejam acionadas fora do gramado altere a função <b>'update()'</b>:
 
 ```javascript
-    let c = document.getElementById("idCanvas");
-    let ctx = c.getContext("2d");
-    let imagem = new Image();
-    imagem.onload = function(){
-    ctx.drawImage(imagem,0,0);
-    };
-    img.src = "img.png";
+    unction update(event) {
+
+    // Cobrinha fora do contexto
+    if (snake[0].x > 15 * box && direction == "right" 
+        || snake[0].x < 0  && direction == "left" 
+        || snake[0].y > 15 * box && direction == "down" 
+        || snake[0].y < 0 && direction == "up") 
+    { 
+        // Ignora ações das teclas até voltar para o contexto
+    }
+    else {
+        // Altera a direção pelas teclas
+        if (event.keyCode == 37 && direction != "right") direction = "left";
+        if (event.keyCode == 38 && direction != "down") direction = "up";
+        if (event.keyCode == 39 && direction != "left") direction = "right";
+        if (event.keyCode == 40 && direction != "up") direction = "down";
+    }
+}
 ```
 
 Para entender melhor o trecho acima poderá acessar o site da DevMedia listado abaixo:
@@ -74,7 +92,12 @@ Para entender melhor o trecho acima poderá acessar o site da DevMedia listado a
 2. Alteração da função update para impedir o uso das teclas fora do gramado.
 3. Alteração das cores do jogo com efeito degradê no corpo da cobrinha.
 4. Padronização do nome das funções para inglês.
+5. Criação da logo.
 
+## :small_orange_diamond: Licença
+
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
+A(s) imagem(s) usadas neste projeto são originais do autor ou foram obtidas do Google Imagens com a devida autorização para uso gratuito com modificação.
 
 ## :small_orange_diamond: Agradecimentos
 
