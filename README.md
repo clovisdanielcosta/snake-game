@@ -12,7 +12,7 @@ Bootcamp Global FullStack Developer da Digital Innovation One
 </p>
 
 <p>
-O objetivo deste projeto é recriar o jogo da cobrinha com JavaScript. É um desafio prático do Bootcamp Global FullStack Developer disponibilizado pela <b>Digital Innovation One</b> cujo objetivo é formar desenvolvedores para estarem para atuar nas 10 nações que falam a língua portuguesa.
+O objetivo deste projeto é recriar o jogo da cobrinha com JavaScript. É um desafio prático do Bootcamp Global FullStack Developer disponibilizado pela <b>Digital Innovation One</b> cujo objetivo é formar desenvolvedores para estarem aptos para atuar nas 10 nações que falam a língua portuguesa.
 </p>
 
 <p align="center">
