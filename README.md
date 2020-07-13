@@ -34,7 +34,7 @@ O objetivo deste projeto é recriar o jogo da cobrinha com JavaScript. É um des
   
 Inicialmente fora usado o servidor Heroku para teste do pipeline com o GitHub e o deploy da aplicação. Posteriormente o deploy foi feito no GitHub.io. Para testar a aplicação acesse:
 
-- [at https://clovisdanielcosta.github.io/snake-game//](at https://clovisdanielcosta.github.io/snake-game/)
+- [at https://clovisdanielcosta.github.io/snake-game//](https://clovisdanielcosta.github.io/snake-game/)
 
 ## :rocket: Tecnologias
 
